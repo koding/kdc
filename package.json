@@ -1,0 +1,23 @@
+{
+  "name": "kdc",
+  "version": "0.0.1",
+  "description": "Koding Apps Compiler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koding/kdc"
+  },
+  "keywords": [
+    "koding",
+    "app",
+    "compiler"
+  ],
+  "author": "Fatih Kadir Akin",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/koding/kdc/issues"
+  }
+}
