@@ -101,5 +101,5 @@ module.exports = ()->
   /* KDAPP ENDS */
   }).call();
   """
-  fs.writeFileSync (path.join appPath, "index.app.js"), mainSource
+  fs.writeFileSync (path.join appPath, "index.js"), mainSource
   console.log "Application has been compiled!"
