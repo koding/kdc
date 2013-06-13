@@ -1,6 +1,6 @@
 {
   "name": "kdc",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Koding Apps Compiler",
   "main": "index.js",
   "bin": {

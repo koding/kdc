@@ -67,11 +67,11 @@ module.exports = ()->
     file = path.normalize (path.join appPath, file)  if appPath
 
     if /\.coffee/.test file
-      try
+      if fs.existsSync file
         data = fs.readFileSync file
-      catch error
+      else
         console.log "The required file not found: #{file}"
-        process.exit error.errno
+        process.exit 34
       try
         compiled = coffee.compile data.toString(), bare: true
       catch error
@@ -80,11 +80,11 @@ module.exports = ()->
         process.exit 4
 
     else if /\.js/.test file
-      try
+      if fs.existsSync file
         compiled = fs.readFileSync(file).toString()
-      catch error
-        console.log error
-        process.exit 1
+      else
+        console.log "The required file not found: #{file}"
+        process.exit 34
 
     block = """
     /* BLOCK STARTS: #{file} */
