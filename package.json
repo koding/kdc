@@ -19,8 +19,8 @@
   "license": "GPL",
   "bugs": {
     "url": "https://github.com/koding/kdc/issues"
-  }
-  "depedencies": {
+  },
+  "dependencies": {
     "coffee-script": "latest"
   }
 }
