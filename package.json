@@ -20,4 +20,7 @@
   "bugs": {
     "url": "https://github.com/koding/kdc/issues"
   }
+  "depedencies": {
+    "coffee-script": "latest"
+  }
 }
