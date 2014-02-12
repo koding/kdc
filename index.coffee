@@ -35,7 +35,7 @@ compileDebug = (path, source, error)->
   #{next_line}
   """
 
-module.exports = ()->
+module.exports = ->
 
   [bin, file, appPath] = process.argv
 
@@ -102,4 +102,4 @@ module.exports = ()->
   }).call();
   """
   fs.writeFileSync (path.join appPath, "index.js"), mainSource
-  console.log "Application has been compiled!"
+  console.log "Compiled successfully."
